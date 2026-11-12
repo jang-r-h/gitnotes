@@ -13,3 +13,11 @@ git reset：把当前版本回退到上一个版本。
 --mixed:回退到当前版本的未添加状态（暂存区清空，代码放回代码区）。
 
 git reflog：用来记录你的每一次命令。
+
+添加远程仓库
+
+在GitHub上创建一个仓库，在本地仓库运行命令：
+git remote add origin git@github.com:github账户名/.git
+关联一个远程仓库。
+关联后，使用命令：git push -u origin master 第一次推送分支master的所有内容
+此后每一次提交后，只要有必要，就使用命令：git push origin master 推送最新修改
